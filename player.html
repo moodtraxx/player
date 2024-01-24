@@ -9,7 +9,12 @@
     </div>
     <script src="https://cdn.jsdelivr.net/gh/moodtraxx/video-player@main/playerjs.js"></script>
     <script>
-        // Initialization code for PlayerJS
+        document.addEventListener('DOMContentLoaded', function () {
+            var player = new Playerjs({
+                id: "video-container",
+                file: "https://video.wixstatic.com/video/9039fb_b787b48c8cb743a986bb0c224d62ce11/1080p/mp4/file.mp4"
+            });
+        });
     </script>
 </body>
 </html>
